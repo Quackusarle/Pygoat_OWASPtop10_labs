@@ -1,0 +1,8 @@
+IP,Port,TrangThai,DichVu
+167.172.86.54,22,open,OpenSSH 8.9p1 Ubuntu 3ubuntu0.13
+167.172.86.54,80,open,nginx 1.18.0 (Ubuntu)
+167.172.86.54,443,open,nginx 1.18.0 (Ubuntu)
+188.42.196.15,80,open,nginx 1.20.1
+188.42.196.15,443,open,nginx/1.20.1
+185.102.74.214,80,open,nginx
+185.102.74.214,8888,open,sun-answerbook?
