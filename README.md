@@ -57,14 +57,3 @@ Các bài lab và kịch bản khai thác trong 3 session được thực hiện
 * **Local File Read:** Cấu hình payload ép máy chủ đọc các tệp tin hệ thống nội bộ (`/etc/passwd`).
 * **SSRF TOCTOU (DNS Rebinding):** Vượt qua các bộ lọc Whitelist/Blacklist IP của máy chủ bằng kỹ thuật **DNS Rebinding** (khai thác khoảng hở thời gian TOCTOU - Time of Check to Time of Use).
 
----
-
-## Kỹ năng Reconnaissance & OSINT chuyên sâu
-Giai đoạn thu thập thông tin được tôi thực hiện vô cùng kỹ lưỡng thông qua các phương pháp:
-* **Hạ tầng mạng & Dịch vụ:** Dùng `Nmap` quét top 1000 ports để định danh dịch vụ; dùng `nslookup`, `dig`, `whois` phân tích bản ghi DNS (MX, A) để vẽ sơ đồ hạ tầng IP.
-* **Web Technology Fingerprinting:** Phân tích HTTP Headers để xác định Web Server (Apache/2.4.62, CentOS) và CMS (Drupal 7).
-* **Dò quét Subdomain & Thư mục:** Kết hợp `DNSdumpster`, `subfinder`, `assetfinder` tìm subdomain; dùng `dirsearch`, `gobuster` phát hiện tệp tin nhạy cảm (vd: tìm thấy cơ sở dữ liệu `users.db` của SQLite3).
-* **OSINT & Lịch sử mã nguồn:** 
-  * Dùng **Google Dorks** (`ext:pdf`, `ext:doc`) tìm tài liệu nội bộ.
-  * Dùng **Wayback Machine** (Internet Archive) để xem lại cấu trúc file `robots.txt` cũ.
-  * Dùng **Github Dorking** phân tích lịch sử Commit, phát hiện các Secret Keys bị rò rỉ trong quá trình lập trình.
